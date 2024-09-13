@@ -88,13 +88,13 @@ const appPages = [
   },
   {
     title: 'Store Locator',
-    url: '/folder/Locator',
+    url: '/folder/Store Location',
     iosIcon: storefront,
     mdIcon: storefront,
   },
   {
     title: "FAQ's",
-    url: '/folder/Trash',
+    url: "/folder/FAQ's",
     iosIcon: helpCircle,
     mdIcon: helpCircle,
   },
