@@ -1,0 +1,8 @@
+{
+  "name": "Fast Food App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite",
+  "id": "480bc4cc"
+}
