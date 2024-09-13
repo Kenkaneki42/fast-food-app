@@ -16,11 +16,10 @@
           </ion-list>
 
           <ion-list id="labels-list">
-            <ion-list-header>Labels</ion-list-header>
 
             <ion-item v-for="(label, index) in labels" lines="none" :key="index">
-              <ion-icon aria-hidden="true" slot="start" :ios="bookmarkOutline" :md="bookmarkSharp"></ion-icon>
-              <ion-label>{{ label }}</ion-label>
+              <ion-icon aria-hidden="true" slot="start" :ios="label.iosIcon" :md="label.mdIcon" :class="{ 'favorite-icon': label.title === 'My Favorites' }"></ion-icon>
+              <ion-label>{{ label.title }}</ion-label>
             </ion-item>
           </ion-list>
         </ion-content>
@@ -49,14 +48,18 @@ import { ref } from 'vue';
 import {
   archiveOutline,
   archiveSharp,
-  bookmarkOutline,
-  bookmarkSharp,
-  heartOutline,
-  heartSharp,
+  bag,
+  document,
+  heart,
+  helpCircle,
+  location,
+  notifications,
   mailOutline,
   mailSharp,
   paperPlaneOutline,
   paperPlaneSharp,
+  person,
+  storefront,
   trashOutline,
   trashSharp,
   warningOutline,
@@ -66,43 +69,63 @@ import {
 const selectedIndex = ref(0);
 const appPages = [
   {
-    title: 'Inbox',
+    title: 'Home',
     url: '/folder/Inbox',
     iosIcon: mailOutline,
     mdIcon: mailSharp,
   },
   {
-    title: 'Outbox',
-    url: '/folder/Outbox',
-    iosIcon: paperPlaneOutline,
-    mdIcon: paperPlaneSharp,
+    title: 'Order Now!',
+    url: '/folder/Our Foods',
+    iosIcon: bag,
+    mdIcon: bag,
   },
   {
-    title: 'Favorites',
-    url: '/folder/Favorites',
-    iosIcon: heartOutline,
-    mdIcon: heartSharp,
+    title: 'Notifications',
+    url: '/folder/Notifications',
+    iosIcon: notifications,
+    mdIcon: notifications,
   },
   {
-    title: 'Archived',
-    url: '/folder/Archived',
-    iosIcon: archiveOutline,
-    mdIcon: archiveSharp,
+    title: 'Store Locator',
+    url: '/folder/Locator',
+    iosIcon: storefront,
+    mdIcon: storefront,
   },
   {
-    title: 'Trash',
+    title: "FAQ's",
     url: '/folder/Trash',
-    iosIcon: trashOutline,
-    mdIcon: trashSharp,
-  },
-  {
-    title: 'Spam',
-    url: '/folder/Spam',
-    iosIcon: warningOutline,
-    mdIcon: warningSharp,
+    iosIcon: helpCircle,
+    mdIcon: helpCircle,
   },
 ];
-const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+const labels = [
+  {
+    title: 'My Orders',
+    iosIcon: bag,
+    mdIcon: bag,
+  },
+  {
+    title: 'My Account',
+    iosIcon: person,
+    mdIcon: person,
+  },
+  {
+    title: 'My Favorites',
+    iosIcon: heart,
+    mdIcon: heart,
+  },
+  {
+    title: 'Order Tracker',
+    iosIcon: location,
+    mdIcon: location,
+  },
+  {
+    title: 'Order History',
+    iosIcon: document,
+    mdIcon: document,
+  }
+];
 
 const path = window.location.pathname.split('folder/')[1];
 if (path !== undefined) {
