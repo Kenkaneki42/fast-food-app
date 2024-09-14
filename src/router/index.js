@@ -1,21 +1,29 @@
-import { createRouter, createWebHistory } from '@ionic/vue-router';
+import { createRouter, createWebHistory } from "@ionic/vue-router";
 
-import HomePage from '../views/HomePage.vue';
+import HomePage from "../views/HomePage.vue";
+import LoyaltyPoints from "../views/LoyaltyPoints.vue";
 
 const routes = [
   {
-    path: '/',
-    redirect: '/home'
+    path: "/",
+    redirect: "/home",
   },
   {
-    path: '/folder/:id',
-    component: HomePage
+    path: "/home",
+    name: 'Home Page',
+    component: HomePage,
+  },
+  {
+    path: "/loyaltyPage",
+    name: 'Loyalty Page',
+    component: LoyaltyPoints
   }
-]
+
+];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

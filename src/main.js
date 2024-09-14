@@ -21,7 +21,6 @@ import '@ionic/vue/css/flex-utils.css';
 import '@ionic/vue/css/display.css';
 
 /**
- * Ionic Dark Mode
  * -----------------------------------------------------
  * For more info, please see:
  * https://ionicframework.com/docs/theming/dark-mode
@@ -29,15 +28,20 @@ import '@ionic/vue/css/display.css';
 
 /* @import '@ionic/vue/css/palettes/dark.always.css'; */
 /* @import '@ionic/vue/css/palettes/dark.class.css'; */
-import '@ionic/vue/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import BaseLayout from './Components/BaseLayout.vue';
+
+
 
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
+  
+app.component('base-layout', BaseLayout);
 
 router.isReady().then(() => {
   app.mount('#app');
 });
+
