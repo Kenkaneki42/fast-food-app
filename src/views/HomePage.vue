@@ -137,15 +137,15 @@
                       <img src="../../resources/chickensalad.png" alt="">
                     </div>
                     <div class="card-description ps-3 product-title mulish">
-                      Steak Veggie Fries
+                      Chicken Salad
                     </div>
                     <div class="card-description ps-3 product-description mulish">
-                      Meat
+                      Chicken
                     </div>
                     <div class="price-ratings ps-3">
                       <div class="row row-cols-2 pb-3 mt-3 mb-2">
                         <div class="col-6 d-flex align-items-center">
-                          <h5 class ="text-danger price mulish m-0 p-0 ">P 175</h5>
+                          <h5 class ="text-danger price mulish m-0 p-0 ">P 172</h5>
                         </div>
                         <div class="col-6 d-flex align-items-center">
                           <ion-icon class="fullstar" :src="fullStar"></ion-icon>
@@ -159,20 +159,20 @@
                   </div>
                 </div>
                 <div class="col-6 col-lg-3 p-0">
-                  <div class="card mx-1 d-flex justify-content-center">
+                  <div class="card mx-1 d-flex justify-content-center text-truncate">
                     <div class="image-position">
                       <img src="../../resources/icecream.png" alt="">
                     </div>
-                    <div class="card-description ps-3 product-title mulish">
-                      Steak Veggie Fries
+                    <div class="card-description ps-3 product-title mulish text-truncate">
+                      Sorvetes Primavera Indaiatuba
                     </div>
                     <div class="card-description ps-3 product-description mulish">
-                      Meat
+                      Dessert
                     </div>
                     <div class="price-ratings ps-3">
                       <div class="row row-cols-2 pb-3 mt-3 mb-2">
                         <div class="col-6 d-flex align-items-center">
-                          <h5 class ="text-danger price mulish m-0 p-0 ">P 175</h5>
+                          <h5 class ="text-danger price mulish m-0 p-0 ">P 185</h5>
                         </div>
                         <div class="col-6 d-flex align-items-center">
                           <ion-icon class="fullstar" :src="fullStar"></ion-icon>
@@ -191,10 +191,10 @@
                       <img src="../../resources/tenderloin.png" alt="">
                     </div>
                     <div class="card-description ps-3 product-title mulish">
-                      Steak Veggie Fries
+                      Fried Chicken
                     </div>
                     <div class="card-description ps-3 product-description mulish">
-                      Meat
+                      Chicken
                     </div>
                     <div class="price-ratings ps-3">
                       <div class="row row-cols-2 pb-3 mt-3 mb-2">

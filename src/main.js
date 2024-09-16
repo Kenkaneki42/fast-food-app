@@ -33,8 +33,6 @@ import '@ionic/vue/css/display.css';
 import './theme/variables.css';
 import BaseLayout from './Components/BaseLayout.vue';
 
-
-
 const app = createApp(App)
   .use(IonicVue)
   .use(router);

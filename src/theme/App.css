@@ -145,6 +145,26 @@ ion-menu ion-content {
   font-weight: 700;
   font-style: normal;
 }
+.mulish-600 {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.mulish-500 {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.mulish-400 {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 .logoutButton{
   width:200px;
