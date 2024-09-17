@@ -32,6 +32,7 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import BaseLayout from './Components/BaseLayout.vue';
+import './theme/App.css';
 
 const app = createApp(App)
   .use(IonicVue)
