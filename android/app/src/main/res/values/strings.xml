@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">Fast Fodd</string>
-    <string name="title_activity_main">Fast Fodd</string>
-    <string name="package_name">com.fastfoodapp.app</string>
-    <string name="custom_url_scheme">com.fastfoodapp.app</string>
-</resources>
